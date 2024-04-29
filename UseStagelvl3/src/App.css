@@ -1,0 +1,46 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+.div-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.div-item {
+  border: 1px solid white;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+}
+
+.bg-color {
+  background-color: #d3d3d3;
+}
+/* accordion styling */
+
+.wrap-main {
+  padding: 0.5rem 0.5rem;
+  border: solid 1px white;
+  width: 500px;
+}
+
+.more-text {
+  padding: 0.5rem 0.5rem;
+  border: solid 1px white;
+  color: #d3d3d3;
+  width: 500px;
+}
+.wrap-main div, .wrap-main button{
+  display: inline-block;
+  padding: 0 0.5rem;
+}
