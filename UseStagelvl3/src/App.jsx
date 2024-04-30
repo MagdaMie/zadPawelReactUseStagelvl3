@@ -36,8 +36,42 @@ function App() {
         })
       }
 
+      // next one
+
+      const navs = [1,2,3,4,5]
+
+      const[selectedNav, setSelectedNav] = useState(1)
+
+      const handleSelectNav = (id) => {
+        setSelectedNav(prevSelectedNav => {
+          if(prevSelectedNav !== id) {
+            return id
+          } 
+        })
+      }
+
   return (
     <>
+
+    {/* next one */}
+    <div className="div-wrap">
+      <div className='div-bg'
+      style={{
+        left: (((selectedNav-1)*62))+'px',
+        transition: 'left 0.25s ease-in-out'
+        }}>
+      </div>
+      {navs.map(nav =>
+      <DivElement 
+        content={nav}
+        key={nav}
+        onClick={() => handleSelectNav(nav)}
+      />  
+    )
+
+      }
+    </div>
+
       {/* zmiana tla lvl3 */}
       <div className="div-wrap">
         {squares.map(square =>

@@ -10,7 +10,9 @@
 .div-wrap {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center; 
+  margin-bottom: 25px;
+  position: relative;
 }
 
 .div-item {
@@ -20,7 +22,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 25px;
+  margin-right: 25px;
+  z-index: 1;
+}
+
+.div-item:hover {
+  cursor: pointer;
+  color: aqua;
+}
+
+.div-bg {
+  height: 35px;
+  width: 35px;
+  border: 1px solid white;
+  background-color: aqua;
+  box-shadow: 4px 4px 6px 1px rgba(0, 196, 213, 0.8);
+  position: absolute;
 }
 
 .bg-color {
